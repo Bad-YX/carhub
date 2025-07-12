@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 const Navbar = () => {
     const router = useRouter();
     const handleReturnToHomePage = () => {
-        router.replace("/");
+        router.push("/");
         window.location.reload();
     }
     return (

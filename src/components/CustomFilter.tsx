@@ -20,9 +20,8 @@ const CustomFilter = ({title, options}: CustomFilterProps) => {
         }
         const newPathName = `${window.location.pathname}?${searchParams.toString()}`;
         router.push(newPathName, {scroll: false});
-        
     }
-    useEffect(() => {handleUpdateParams()}, [selected]);
+    useEffect(handleUpdateParams, [selected]);
     return (
         <div className='w-fit'>
             <Listbox
