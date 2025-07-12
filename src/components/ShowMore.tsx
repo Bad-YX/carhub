@@ -11,7 +11,7 @@ const ShowMore = ({pageNumber, isNext} : ShowMoreProps) => {
         searchParams.set("limit", `${newLimit}`);
         
         const newPathName = `${window.location.pathname}?${searchParams.toString()}`;
-        router.push(newPathName);
+        router.push(newPathName, {scroll: false});
     };
     return (
         <div className="w-full flex-center gap-5 mt-10">

@@ -19,7 +19,7 @@ const CustomFilter = ({title, options}: CustomFilterProps) => {
             if(selected.value === "") searchParams.delete("fuel");
         }
         const newPathName = `${window.location.pathname}?${searchParams.toString()}`;
-        router.push(newPathName);
+        router.push(newPathName, {scroll: false});
         
     }
     useEffect(() => {handleUpdateParams()}, [selected]);
