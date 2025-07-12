@@ -6,8 +6,8 @@ import CustomButton from "./CustomButton";
 import { useRouter } from "next/navigation";
 
 const Navbar = () => {
+    const router = useRouter();
     const handleReturnToHomePage = () => {
-        const router = useRouter();
         router.replace("/");
         window.location.reload();
     }
