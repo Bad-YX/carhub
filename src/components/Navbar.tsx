@@ -7,7 +7,6 @@ import CustomButton from "./CustomButton";
 const Navbar = () => {
     const handleReturnToHomePage = () => {
         window.location.href = window.location.origin + window.location.pathname;
-        window.location.reload();
     }
     return (
         <header className="w-full absolute z-10">
