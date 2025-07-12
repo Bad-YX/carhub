@@ -3,12 +3,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import CustomButton from "./CustomButton";
-import { useRouter } from "next/navigation";
 
 const Navbar = () => {
-    const router = useRouter();
     const handleReturnToHomePage = () => {
-        router.push("/");
+        window.location.href = window.location.origin + window.location.pathname;
         window.location.reload();
     }
     return (
