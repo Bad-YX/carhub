@@ -15,7 +15,7 @@ This project recreates the tutorial experience but in Arabic, with enhancements 
 
 ## 💻 Live Preview
 
-You can view the live version of the project [here](carhub-yx.netlify.app).
+You can view the live version of the project [here](https://carhub-yx.netlify.app/).
 
 ---
 
